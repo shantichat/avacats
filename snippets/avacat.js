@@ -20,7 +20,7 @@ function crc32 (str) {
 }
 
 function avacat (name, size, num = 255) {
-  const i = crc32(name) % num
+  const i = crc32(name.toLowerCase()) % num
   return `https://shantichat.github.io/avacats/${size}x${size}/${i}.jpg`
 }
 

@@ -1,5 +1,5 @@
 function avacat ($name, $size, $num = 255) {
-  $i = crc32($name) % $num;
+  $i = crc32(mb_strtolower($name)) % $num;
   return "https://shantichat.github.io/avacats/$sizex$size/$i.jpg";
 }
 
