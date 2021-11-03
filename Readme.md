@@ -28,6 +28,7 @@ Snippets:
 
 - [Go](https://github.com/shantichat/avacats/tree/main/snippets/avacat.go)
 - [JavaScript](https://github.com/shantichat/avacats/tree/main/snippets/avacat.js)
+- [PHP](https://github.com/shantichat/avacats/tree/main/snippets/avacat.php)
 - [Python](https://github.com/shantichat/avacats/tree/main/snippets/avacat.py)
 
 ## Sources
