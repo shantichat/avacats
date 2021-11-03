@@ -17,7 +17,7 @@ Check values from https://shantichat.github.io/avacats/index.json:
 {"sizes": [80, 120, 160, 240], "num": 255}
 ```
 
-Create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where `size` is one allowed `sizes` and 
+Create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where `size` is value from `sizes` and 
 `i` is number from `0` to `num`. 
 
 Use any simple hash for `i` calculation. Snippets:
