@@ -25,4 +25,7 @@ function avacat (name, size, num = 255) {
 }
 
 console.log(avacat('alice@example.com', 80))
+// https://shantichat.github.io/avacats/80/171.jpg
+
 console.log(avacat('bob@example.com', 120))
+// https://shantichat.github.io/avacats/120/222.jpg
