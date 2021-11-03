@@ -12,16 +12,15 @@
 
 ## Usage
 
-Just create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where:
-   * `size` is one of allowed sizes (80, 120, 160, 240)
-   * `i` is number from `0` to `255`. Use any simple hash
-
-Both values available from https://shantichat.github.io/avacats/index.json:
+Check values from https://shantichat.github.io/avacats/index.json:
 ```json
 {"sizes": [80, 120, 160, 240], "num": 255}
 ```
 
-Snippets:
+Create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where `size` is one allowed `sizes` and 
+`i` is number from `0` to `num`. 
+
+Use any simple hash for `i` calculation. Snippets:
  * [Python](https://github.com/shantichat/avacats/tree/main/snippets/avacat.py)
 
 ### JS
