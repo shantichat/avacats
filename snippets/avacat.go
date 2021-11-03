@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	fmt.Println(Avacat("alice@example.com", 80)) // https://shantichat.github.io/avacats80x80/171.jpg
-	fmt.Println(Avacat("bob@example.com", 120))  // https://shantichat.github.io/avacats120x120/222.jpg
+	fmt.Println(Avacat("alice@example.com", 80)) // https://shantichat.github.io/avacats/80x80/171.jpg
+	fmt.Println(Avacat("bob@example.com", 120))  // https://shantichat.github.io/avacats/120x120/222.jpg
 }
 
 func Avacat(name string, size int) string {
