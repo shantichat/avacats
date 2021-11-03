@@ -34,7 +34,7 @@ def main(root, dest, sizes):
 
     index_json = {
         'sizes': sizes,
-        'max': len(files),
+        'num': len(files),
     }
 
     with open(f'{dest}/index.json', 'w') as f:
