@@ -22,6 +22,7 @@ Create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, wh
 
 Use any simple hash for `i` calculation. Snippets:
  * [Python](https://github.com/shantichat/avacats/tree/main/snippets/avacat.py)
+ * [Go](https://github.com/shantichat/avacats/tree/main/snippets/avacat.go)
 
 ## Sources
 
