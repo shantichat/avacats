@@ -12,19 +12,17 @@
 
 ## Usage
 
-No libs need. Check https://shantichat.github.io/avacats/index.json and write few lines of code:
+Just create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where:
+   * `size` is one of allowed sizes (80, 120, 160, 240)
+   * `i` is number from `0` to `255`. Use any simple hash
 
-### Python
-```python
-def avacat(name, size, *, num=255):
-    """
-    >>> avacat('user@example.com', 80)
-    'https://shantichat.github.io/avacats/80x80/7.jpg'
-    """
-    assert size in {80, 120, 160, 240}
-    i = hash(name.lower()) % num
-    return f'https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg'
+Both values available from https://shantichat.github.io/avacats/index.json:
+```json
+{"sizes": [80, 120, 160, 240], "num": 255}
 ```
+
+Snippets:
+ * [Python](https://github.com/shantichat/avacats/tree/main/snippets/avacat.py)
 
 ### JS
 ```javascript
