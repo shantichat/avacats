@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 	"hash/crc32"
 )
 
@@ -13,6 +14,6 @@ func main() {
 func Avacat(name string, size int) string {
 	const root = "https://shantichat.github.io/avacats"
 	const maxNum = 255
-	i := crc32.ChecksumIEEE([]byte(name)) % maxNum
+	i := crc32.ChecksumIEEE([]byte(strings.ToLower(name))) % maxNum
 	return fmt.Sprintf("%s/%dx%d/%d.jpg", root, size, size, i)
 }

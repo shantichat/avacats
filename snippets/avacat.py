@@ -10,7 +10,7 @@ class Avacat:
 
     def __call__(self, name, size):
         assert size in self.info['sizes'], f"Size {size} not allowed, available sizes: {self.info['sizes']}"
-        i = crc32(name.encode()) % self.info['num']
+        i = crc32(name.lower().encode()) % self.info['num']
         return f'{self.root}{size}x{size}/{i}.jpg'
 
 
