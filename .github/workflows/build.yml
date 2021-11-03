@@ -13,7 +13,7 @@ jobs:
       with:
         python-version: 3.9
     - run: pip install -r requirements.txt
-    - run: python whoosh.py
+    - run: python make-previews.py
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
