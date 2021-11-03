@@ -17,10 +17,11 @@ Check values from https://shantichat.github.io/avacats/index.json:
 {"sizes": [80, 120, 160, 240], "num": 255}
 ```
 
-Create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where `size` is value from `sizes` and 
-`i` is number from `0` to `num`. 
-
-Use any simple hash (e.g. CRC32) for string + modulo division to `num` for `i` calculation. Snippets:
+Create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where:
+ * `size` is value from `sizes` 
+ * `i` is number from `0` to `num`. For any string: `i = CRC32(lowercased_given_string) % num`.
+ 
+Snippets:
  * [Python](https://github.com/shantichat/avacats/tree/main/snippets/avacat.py)
  * [Go](https://github.com/shantichat/avacats/tree/main/snippets/avacat.go)
 
