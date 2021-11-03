@@ -12,8 +12,7 @@ func main() {
 }
 
 func Avacat(name string, size int) string {
-	const root = "https://shantichat.github.io/avacats"
 	const maxNum = 255
 	i := crc32.ChecksumIEEE([]byte(strings.ToLower(name))) % maxNum
-	return fmt.Sprintf("%s/%dx%d/%d.jpg", root, size, size, i)
+	return fmt.Sprintf("https://shantichat.github.io/avacats/%dx%d/%d.jpg", size, size, i)
 }
