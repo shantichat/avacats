@@ -32,17 +32,17 @@ def main(root, dest, sizes):
             with open(icon_path, 'wb') as f:
                 f.write(icon.getvalue())
 
-    index = {
+    index_json = {
         'sizes': sizes,
         'max': len(files),
     }
 
     with open(f'{dest}/index.json', 'w') as f:
-        json.dump(index, f)
+        json.dump(index_json, f)
 
 
 if __name__ == '__main__':
-    main('source', 'i', sizes=[
+    main('source', 'public', sizes=[
         80,
         120,
         160,
