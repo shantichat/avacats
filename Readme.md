@@ -19,7 +19,7 @@ Check values from https://shantichat.github.io/avacats/index.json:
 
 Create url like `https://shantichat.github.io/avacats/{size}x{size}/{i}.jpg`, where:
  * `size` is value from `sizes` 
- * `i` is number from `0` to `num`. For any string: `i = CRC32(lowercased_given_string) % num`.
+ * `i = CRC32(lowercased_username) % num`.
  
 Snippets:
  * [Python](https://github.com/shantichat/avacats/tree/main/snippets/avacat.py)
