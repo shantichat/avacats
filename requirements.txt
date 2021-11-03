@@ -1,2 +1,3 @@
-Pillow
 pilkit
+Pillow
+requests

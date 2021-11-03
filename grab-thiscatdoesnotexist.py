@@ -16,8 +16,8 @@ def main(root, max_num):
         with open(image_path, 'wb') as f:
             f.write(r.content)
 
-        time.sleep(3)
+        time.sleep(2.5)
 
 
 if __name__ == '__main__':
-    main('source', 128)
+    main('source', 255)
