@@ -14,7 +14,7 @@ No libs need. Check https://shantichat.github.io/avacats/index.json and write fe
 
 ### Python
 ```python
-def avacat(name, size, *, num=36):
+def avacat(name, size, *, num=128):
     """
     >>> avacat('user@example.com', 80)
     'https://shantichat.github.io/avacats/80x80/7.jpg'
@@ -31,4 +31,4 @@ def avacat(name, size, *, num=36):
 
 ## Sources
 
-Thanx for https://www.pexels.com/search/cat/
+Thanx for https://thiscatdoesnotexist.com
