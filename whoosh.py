@@ -6,7 +6,7 @@ from pilkit.processors import SmartResize
 from pilkit.utils import process_image
 
 
-def main(root, dest, sizes):
+def make_previews(root, dest, sizes):
     options = {
         'progressive': True,
         'optimize': True,
@@ -42,7 +42,7 @@ def main(root, dest, sizes):
 
 
 if __name__ == '__main__':
-    main('source', 'public', sizes=[
+    make_previews('source', 'public', sizes=[
         80,
         120,
         160,

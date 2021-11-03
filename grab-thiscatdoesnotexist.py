@@ -4,7 +4,8 @@ import time
 import requests
 
 
-def main(root, max_num):
+def grab(root, max_num, *, pause=2.5):
+    num = 0
     for i in range(max_num):
         image_path = f'{root}/{i}.jpg'
         if os.path.exists(image_path):
@@ -15,9 +16,10 @@ def main(root, max_num):
         r = requests.get('https://thiscatdoesnotexist.com')
         with open(image_path, 'wb') as f:
             f.write(r.content)
-
-        time.sleep(2.5)
+            num += 1
+        time.sleep(pause)
+    print('downloaded:', num)
 
 
 if __name__ == '__main__':
-    main('source', 255)
+    grab('source', 255)
