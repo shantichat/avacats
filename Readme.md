@@ -8,13 +8,15 @@
 ![Hi](https://shantichat.github.io/avacats/80x80/5.jpg)
 ![Hi](https://shantichat.github.io/avacats/80x80/6.jpg)
 
+(Natasha, wake up!)
+
 ## Usage
 
 No libs need. Check https://shantichat.github.io/avacats/index.json and write few lines of code:
 
 ### Python
 ```python
-def avacat(name, size, *, num=128):
+def avacat(name, size, *, num=255):
     """
     >>> avacat('user@example.com', 80)
     'https://shantichat.github.io/avacats/80x80/7.jpg'
