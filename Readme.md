@@ -10,7 +10,7 @@
 
 ## Usage
 
-No libs need. Chek https://shantichat.github.io/avacats/index.json and write few lines of code:
+No libs need. Check https://shantichat.github.io/avacats/index.json and write few lines of code:
 
 ### Python
 ```python
